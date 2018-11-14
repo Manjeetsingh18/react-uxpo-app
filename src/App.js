@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Component } from "react";
+import './styles/app.scss';
 
-export default class App extends React.Component {
+class App extends Component {
     render() {
         return (
-            <div>
-                <span>Welcome to react-uxpo-app</span>
+            <div className="">
+                {this.props.children}
             </div>
-        )
+        );
     }
 }
+
+export default App;
